@@ -132,9 +132,9 @@ function addToCart() {
     const selectedLogo = document.querySelector('input[name="logo"]:checked').value;
     
     const prices = {
-        little: 4000,
-        medium: 7000,
-        huge: 10000
+        little: 9000,
+        medium: 12000,
+        huge: 15000
     };
     
     const packageNames = {
