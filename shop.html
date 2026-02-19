@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - DS CREATIONS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="hex-grid"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23663300;stop-opacity:1'/%3E%3Cstop offset='100%25' style='stop-color:%23ff9933;stop-opacity:1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpolygon points='50,15 85,35 85,65 50,85 15,65 15,35' fill='none' stroke='url(%23grad)' stroke-width='3'/%3E%3Cpolygon points='50,25 75,40 75,60 50,75 25,60 25,40' fill='none' stroke='url(%23grad)' stroke-width='3'/%3E%3Cpolygon points='50,35 65,45 65,55 50,65 35,55 35,45' fill='url(%23grad)'/%3E%3C/svg%3E" alt="DS Creations Logo">
+                <div>
+                    <h1>DS CREATIONS</h1>
+                    <p>AS YOU WISH</p>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="shop.html" class="active">Shop</a></li>
+                <li><a href="cart.html">Cart <span class="cart-count">0</span></a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Shop Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Choose Your Perfect Website</h1>
+            <p>Select a template and customize it to your liking</p>
+        </div>
+    </section>
+
+    <!-- Filters -->
+    <section class="filters">
+        <div class="container">
+            <div class="filter-bar">
+                <button class="filter-btn active" data-category="all">All Templates</button>
+                <button class="filter-btn" data-category="ecommerce">E-Commerce</button>
+                <button class="filter-btn" data-category="blog">Blog</button>
+                <button class="filter-btn" data-category="business">Business</button>
+                <button class="filter-btn" data-category="portfolio">Portfolio</button>
+                <button class="filter-btn" data-category="education">Education</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Templates Gallery -->
+    <section class="templates">
+        <div class="container">
+            <div class="templates-grid">
+                <!-- E-Commerce Templates -->
+                <div class="template-card" data-category="ecommerce">
+                    <div class="template-image">
+                        <div class="template-preview ecommerce-preview">
+                            <div class="preview-header"></div>
+                            <div class="preview-grid">
+                                <div class="preview-item"></div>
+                                <div class="preview-item"></div>
+                                <div class="preview-item"></div>
+                                <div class="preview-item"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="template-info">
+                        <h3>Modern E-Shop</h3>
+                        <p class="template-category">E-Commerce</p>
+                        <p class="template-desc">Sleek online store with product showcase</p>
+                        <button class="btn btn-customize" onclick="openCustomizer('Modern E-Shop', 'ecommerce')">Customize & Select</button>
+                    </div>
+                </div>
+
+                <div class="template-card" data-category="ecommerce">
+                    <div class="template-image">
+                        <div class="template-preview ecommerce-preview-2">
+                            <div class="preview-banner"></div>
+                            <div class="preview-products">
+                                <div class="preview-product"></div>
+                                <div class="preview-product"></div>
+                                <div class="preview-product"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="template-info">
+                        <h3>Fashion Store</h3>
+                        <p class="template-category">E-Commerce</p>
+                        <p class="template-desc">Elegant fashion and lifestyle shop</p>
+                        <button class="btn btn-customize" onclick="openCustomizer('Fashion Store', 'ecommerce')">Customize & Select</button>
+                    </div>
+                </div>
+
+                <!-- Blog Templates -->
+                <div class="template-card" data-category="blog">
+                    <div class="template-image">
+                        <div class="template-preview blog-preview">
+                            <div class="preview-post"></div>
+                            <div class="preview-post-list">
+                                <div class="preview-post-item"></div>
+                                <div class="preview-post-item"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="template-info">
+                        <h3>Tech Blog</h3>
+                        <p class="template-category">Blog</p>
+                        <p class="template-desc">Modern blogging platform for content creators</p>
+                        <button class="btn btn-customize" onclick="openCustomizer('Tech Blog', 'blog')">Customize & Select</button>
+                    </div>
+                </div>
+
+                <div class="template-card" data-category="blog">
+                    <div class="template-image">
+                        <div class="template-preview blog-preview-2">
+                            <div class="preview-featured"></div>
+                            <div class="preview-articles">
+                                <div class="preview-article"></div>
+                                <div class="preview-article"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="template-info">
+                        <h3>Lifestyle Magazine</h3>
+                        <p class="template-category">Blog</p>
+                        <p class="template-desc">Magazine-style blog with rich content</p>
+                        <button class="btn btn-customize" onclick="openCustomizer('Lifestyle Magazine', 'blog')">Customize & Select</button>
+                    </div>
+                </div>
+
+                <!-- Business Templates -->
+                <div class="template-card" data-category="business">
+                    <div class="template-image">
+                        <div class="template-preview business-preview">
+                            <div class="preview-hero"></div>
+                            <div class="preview-sections">
+                                <div class="preview-section"></div>
+                                <div class="preview-section"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="template-info">
+                        <h3>Corporate Pro</h3>
+                        <p class="template-category">Business</p>
+                        <p class="template-desc">Professional business website</p>
+                        <button class="btn btn-customize" onclick="openCustomizer('Corporate Pro', 'business')">Customize & Select</button>
+                    </div>
+                </div>
+
+                <div class="template-card" data-category="business">
+                    <div class="template-image">
+                        <div class="template-preview business-preview-2">
+                            <div class="preview-top"></div>
+                            <div class="preview-content">
+                                <div class="preview-box"></div>
+                                <div class="preview-box"></div>
+                                <div class="preview-box"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="template-info">
+                        <h3>Startup Launch</h3>
+                        <p class="template-category">Business</p>
+                        <p class="template-desc">Modern startup landing page</p>
+                        <button class="btn btn-customize" onclick="openCustomizer('Startup Launch', 'business')">Customize & Select</button>
+                    </div>
+                </div>
+
+                <!-- Portfolio Templates -->
+                <div class="template-card" data-category="portfolio">
+                    <div class="template-image">
+                        <div class="template-preview portfolio-preview">
+                            <div class="preview-gallery">
+                                <div class="preview-work"></div>
+                                <div class="preview-work"></div>
+                                <div class="preview-work"></div>
+                                <div class="preview-work"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="template-info">
+                        <h3>Creative Portfolio</h3>
+                        <p class="template-category">Portfolio</p>
+                        <p class="template-desc">Showcase your creative work beautifully</p>
+                        <button class="btn btn-customize" onclick="openCustomizer('Creative Portfolio', 'portfolio')">Customize & Select</button>
+                    </div>
+                </div>
+
+                <div class="template-card" data-category="portfolio">
+                    <div class="template-image">
+                        <div class="template-preview portfolio-preview-2">
+                            <div class="preview-profile"></div>
+                            <div class="preview-works">
+                                <div class="preview-work-item"></div>
+                                <div class="preview-work-item"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="template-info">
+                        <h3>Designer Showcase</h3>
+                        <p class="template-category">Portfolio</p>
+                        <p class="template-desc">Minimalist portfolio for designers</p>
+                        <button class="btn btn-customize" onclick="openCustomizer('Designer Showcase', 'portfolio')">Customize & Select</button>
+                    </div>
+                </div>
+
+                <!-- Education Templates -->
+                <div class="template-card" data-category="education">
+                    <div class="template-image">
+                        <div class="template-preview education-preview">
+                            <div class="preview-course-header"></div>
+                            <div class="preview-courses">
+                                <div class="preview-course"></div>
+                                <div class="preview-course"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="template-info">
+                        <h3>Learning Hub</h3>
+                        <p class="template-category">Education</p>
+                        <p class="template-desc">Online learning platform</p>
+                        <button class="btn btn-customize" onclick="openCustomizer('Learning Hub', 'education')">Customize & Select</button>
+                    </div>
+                </div>
+
+                <div class="template-card" data-category="education">
+                    <div class="template-image">
+                        <div class="template-preview education-preview-2">
+                            <div class="preview-school"></div>
+                            <div class="preview-info">
+                                <div class="preview-info-box"></div>
+                                <div class="preview-info-box"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="template-info">
+                        <h3>Academy Pro</h3>
+                        <p class="template-category">Education</p>
+                        <p class="template-desc">School or academy website</p>
+                        <button class="btn btn-customize" onclick="openCustomizer('Academy Pro', 'education')">Customize & Select</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customizer Modal -->
+    <div id="customizerModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modalTitle">Customize Your Website</h2>
+            
+            <div class="customizer-section">
+                <h3>Choose Your Package</h3>
+                <div class="package-selector">
+                    <label class="package-option">
+                        <input type="radio" name="package" value="little" checked>
+                        <div class="package-details">
+                            <h4>Little Pack</h4>
+                            <p class="price">9,000/=</p>
+                            <ul>
+                                <li>Up to 5 Pages</li>
+                                <li>Responsive Design</li>
+                                <li>Basic SEO</li>
+                                <li>.com Domain</li>
+                            </ul>
+                        </div>
+                    </label>
+                    <label class="package-option">
+                        <input type="radio" name="package" value="medium">
+                        <div class="package-details">
+                            <h4>Medium Pack</h4>
+                            <p class="price">7,000/=</p>
+                            <ul>
+                                <li>Up to 10 Pages</li>
+                                <li>Advanced Features</li>
+                                <li>SEO Optimized</li>
+                                <li>.com Domain</li>
+                            </ul>
+                        </div>
+                    </label>
+                    <label class="package-option">
+                        <input type="radio" name="package" value="huge">
+                        <div class="package-details">
+                            <h4>Huge Pack</h4>
+                            <p class="price">10,000/=</p>
+                            <ul>
+                                <li>Unlimited Pages</li>
+                                <li>Premium Features</li>
+                                <li>E-Commerce Ready</li>
+                                <li>.com Domain</li>
+                            </ul>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <div class="customizer-section">
+                <h3>Select Primary Color</h3>
+                <div class="color-picker">
+                    <label class="color-option">
+                        <input type="radio" name="color" value="#663300" checked>
+                        <span class="color-swatch" style="background: #663300;"></span>
+                        <span>Brown (Default)</span>
+                    </label>
+                    <label class="color-option">
+                        <input type="radio" name="color" value="#ff9933">
+                        <span class="color-swatch" style="background: #ff9933;"></span>
+                        <span>Orange</span>
+                    </label>
+                    <label class="color-option">
+                        <input type="radio" name="color" value="#2563eb">
+                        <span class="color-swatch" style="background: #2563eb;"></span>
+                        <span>Blue</span>
+                    </label>
+                    <label class="color-option">
+                        <input type="radio" name="color" value="#059669">
+                        <span class="color-swatch" style="background: #059669;"></span>
+                        <span>Green</span>
+                    </label>
+                    <label class="color-option">
+                        <input type="radio" name="color" value="#dc2626">
+                        <span class="color-swatch" style="background: #dc2626;"></span>
+                        <span>Red</span>
+                    </label>
+                    <label class="color-option">
+                        <input type="radio" name="color" value="#7c3aed">
+                        <span class="color-swatch" style="background: #7c3aed;"></span>
+                        <span>Purple</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="customizer-section">
+                <h3>Add Your Logo</h3>
+                <div class="logo-options">
+                    <label class="logo-option">
+                        <input type="radio" name="logo" value="default" checked>
+                        <span>Use DS Creations Logo</span>
+                    </label>
+                    <label class="logo-option">
+                        <input type="radio" name="logo" value="custom">
+                        <span>I'll provide my own logo</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="modal-actions">
+                <button class="btn btn-secondary" onclick="closeCustomizer()">Cancel</button>
+                <button class="btn btn-primary" onclick="addToCart()">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>DS CREATIONS</h3>
+                    <p>Building digital experiences as you wish. Your vision, our expertise.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>📱 +94703600072</li>
+                        <li>📧 dinuthsejan3@gmail.com</li>
+                        <li>🌐 dscreations.vercel.app</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 DS CREATIONS. All rights reserved. As You Wish.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Bottom Navigation -->
+    <nav class="mobile-bottom-nav">
+        <a href="index.html" class="nav-item">
+            <span class="nav-icon">🏠</span>
+            <span class="nav-label">Home</span>
+        </a>
+        <a href="about.html" class="nav-item">
+            <span class="nav-icon">ℹ️</span>
+            <span class="nav-label">About</span>
+        </a>
+        <a href="shop.html" class="nav-item active">
+            <span class="nav-icon">🛍️</span>
+            <span class="nav-label">Shop</span>
+        </a>
+        <a href="cart.html" class="nav-item">
+            <span class="nav-icon">🛒</span>
+            <span class="nav-label">Cart</span>
+            <span class="mobile-cart-badge">0</span>
+        </a>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+</html>
